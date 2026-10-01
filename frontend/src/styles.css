@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4efe8;
+}
+
+.wfx-toast {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* Recharts: suppress the browser's default focus outline that appears
+   on a chart segment (pie sector / bar) when it is clicked. */
+.recharts-wrapper:focus,
+.recharts-wrapper *:focus,
+.recharts-surface:focus,
+.recharts-sector:focus,
+.recharts-layer:focus {
+  outline: none;
+}
